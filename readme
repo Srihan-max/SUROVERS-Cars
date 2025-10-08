@@ -1,35 +1,26 @@
-# Surovers Cars Website
-
-A fully responsive, modern, and luxurious website for the car brand **Surovers**, a branch of Range Rover.
-
-## Features
-
-- Hero section with premium background, logo, and car images
-- Two main car models with detailed specifications and interactive tabs
-- Features, About, and Call-to-Action sections
-- Responsive design for desktop, tablet, and mobile
-- Luxurious styling with metallics, blacks, whites, and deep tones
-
-## How to Use
-
-1. Open `index.html` in your browser.
-2. All images are in `assets/images/`.
-3. Styles are in `style.css`.
+Site Web Surovers Cars
+Découvrez le luxe en mouvement.
 
 ## Live Demo
 
 [Visit the site](https://srihan-max.github.io/SUROVERS-Cars/)
 
-> **Note:**  
-> - The URL is case-sensitive: use `SUROVERS-Cars/` exactly as your repository name.  
-> - Always include the trailing slash (`/`) for best compatibility.
+Fonctionnalités
 
-## Publishing on GitHub Pages
+Section d’accueil premium avec logo et visuels des voitures
 
-1. Push all files to your GitHub repository.
-2. Enable GitHub Pages in repository settings (set source to `/ (root)`).
-3. Visit your live site at the URL above.
+Deux modèles principaux avec spécifications et onglets interactifs
 
----
+Sections Caractéristiques, À propos et Appel à l’action
 
-&copy; 2025 Surovers. A branch of Range Rover.
+Design entièrement responsive pour tous les appareils
+
+Utilisation locale
+
+Ouvrez index.html dans votre navigateur.
+
+Images → assets/images/
+
+Styles → style.css
+
+© 2025 Surovers, une branche de Range Rover.
