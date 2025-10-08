@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surovers | Luxury Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <img src="assets/images/Background.jpg" alt="Surovers Background" class="hero-bg">
+        <div class="hero-overlay">
+            <img src="assets/images/Logo.jpg" alt="Surovers Logo" class="surovers-logo">
+            <div class="hero-cars">
+                <img src="assets/images/Surover_car1.png" alt="Surovers Car 1" class="car-img car1">
+                <img src="assets/images/surover_car2.jpg" alt="Surovers Car 2" class="car-img car2">
+            </div>
+            <h1 class="hero-title">Surovers</h1>
+            <h2 class="hero-subtitle">A Branch of Range Rover</h2>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="models" class="models-section">
+            <h2>Our Models</h2>
+            <div class="model-tabs">
+                <button class="tab-btn active" data-tab="car1">Surovers RR1</button>
+                <button class="tab-btn" data-tab="car2">Surovers RR2</button>
+            </div>
+            <div class="model-content">
+                <div class="model-panel active" id="car1">
+                    <img src="assets/images/Surover_car1.png" alt="Surovers RR1" class="model-img">
+                    <div class="model-details">
+                        <h3>Surovers RR1</h3>
+                        <ul>
+                            <li><strong>Engine:</strong> 4.4L V8 Twin Turbo</li>
+                            <li><strong>Horsepower:</strong> 530 HP</li>
+                            <li><strong>Top Speed:</strong> 250 km/h</li>
+                            <li><strong>0-100 km/h:</strong> 4.5s</li>
+                            <li><strong>Fuel Efficiency:</strong> 10.2 L/100km</li>
+                            <li><strong>Interior:</strong> Premium leather, panoramic sunroof, ambient lighting</li>
+                            <li><strong>Technology:</strong> 15" touchscreen, wireless CarPlay, adaptive cruise</li>
+                            <li><strong>Safety:</strong> 10 airbags, lane assist, 360° camera</li>
+                            <li><strong>Price:</strong> $120,000</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="model-panel" id="car2">
+                    <img src="assets/images/surover_car2.jpg" alt="Surovers RR2" class="model-img">
+                    <div class="model-details">
+                        <h3>Surovers RR2</h3>
+                        <ul>
+                            <li><strong>Engine:</strong> 3.0L I6 Mild Hybrid</li>
+                            <li><strong>Horsepower:</strong> 400 HP</li>
+                            <li><strong>Top Speed:</strong> 230 km/h</li>
+                            <li><strong>0-100 km/h:</strong> 5.8s</li>
+                            <li><strong>Fuel Efficiency:</strong> 8.5 L/100km</li>
+                            <li><strong>Interior:</strong> Windsor leather, digital cockpit, heated seats</li>
+                            <li><strong>Technology:</strong> 13" display, voice control, premium audio</li>
+                            <li><strong>Safety:</strong> Blind spot monitor, auto emergency braking</li>
+                            <li><strong>Price:</strong> $95,000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2>Why Surovers?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Unmatched Luxury</h3>
+                    <p>Handcrafted interiors, exclusive materials, and attention to detail.</p>
+                </div>
+                <div class="feature">
+                    <h3>Advanced Technology</h3>
+                    <p>Next-gen infotainment, driver assistance, and connectivity.</p>
+                </div>
+                <div class="feature">
+                    <h3>Performance</h3>
+                    <p>Powerful engines, dynamic handling, and smooth ride quality.</p>
+                </div>
+                <div class="feature">
+                    <h3>Heritage</h3>
+                    <p>A proud branch of Range Rover, blending tradition with innovation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Surovers</h2>
+            <p>Surovers is the epitome of luxury and innovation, born from the legacy of Range Rover. Our vehicles combine British craftsmanship with cutting-edge technology, offering an unparalleled driving experience. As a proud branch of Range Rover, Surovers stands for prestige, performance, and sophistication.</p>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <h2>Book a Test Drive</h2>
+            <button class="cta-btn">Book Now</button>
+            <h2>Contact Us</h2>
+            <button class="cta-btn">Get in Touch</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Surovers. A branch of Range Rover. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Tab switching for car models
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.model-panel').forEach(panel => panel.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

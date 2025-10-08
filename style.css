@@ -14,8 +14,301 @@ Text Domain: assembler
 Tags: blog, one-column, three-columns, wide-blocks, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, style-variations, template-editing, theme-options, threaded-comments, translation-ready
 */
 
+
 body {
+    margin: 0;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    background: #111;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.5) blur(2px);
+}
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.surovers-logo {
+    width: 180px;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 2px 12px #000a);
+}
+.hero-cars {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.car-img {
+    width: 320px;
+    max-width: 40vw;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px #000a;
+    background: #222;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    height: auto;
+}
+.car1 {
+    max-height: 220px;
+    width: auto;
+    aspect-ratio: unset;
+    object-fit: contain;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin: 0.5rem 0 0 0;
+    text-shadow: 0 2px 12px #000a;
+}
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.main-nav {
+    background: #181818ee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px #0005;
+}
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.main-nav a:hover {
+    color: #c0a060;
+}
+
+.models-section {
+    padding: 4rem 2rem 2rem 2rem;
+    background: linear-gradient(90deg, #181818 60%, #222 100%);
+}
+.models-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.model-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.tab-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 24px 24px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+.tab-btn.active {
+    background: #c0a060;
+    color: #181818;
+}
+.model-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.model-panel {
+    display: none;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    background: #222;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0005;
+    padding: 2rem;
+}
+.model-panel.active {
+    display: flex;
+}
+.model-img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #000a;
+}
+.model-details {
+    flex: 1;
+    min-width: 220px;
+}
+.model-details h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c0a060;
+}
+.model-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.model-details li {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+.model-details strong {
+    color: #fff;
+}
+
+.features-section {
+    padding: 4rem 2rem;
+    background: #181818;
+}
+.features-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.feature {
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0005;
+    padding: 2rem;
+    text-align: center;
+}
+.feature h3 {
+    color: #c0a060;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(90deg, #222 60%, #181818 100%);
+    text-align: center;
+}
+.about-section h2 {
+    font-size: 2rem;
+    color: #c0a060;
+    margin-bottom: 1.5rem;
+}
+.about-section p {
+    font-size: 1.2rem;
+    color: #eee;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-section {
+    padding: 4rem 2rem;
+    background: #181818;
+    text-align: center;
+}
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #c0a060;
+}
+.cta-btn {
+    background: linear-gradient(90deg, #c0a060 60%, #fff 100%);
+    color: #181818;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 32px;
+    font-weight: 700;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+    background: linear-gradient(90deg, #fff 60%, #c0a060 100%);
+    color: #c0a060;
+}
+
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 1rem;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 900px) {
+    .hero-cars {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .car-img {
+        max-width: 80vw;
+        width: 90vw;
+    }
+    .model-panel {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .main-nav ul {
+        gap: 1rem;
+        font-size: 0.95rem;
+    }
+    .features-section, .about-section, .cta-section {
+        padding: 2rem 0.5rem;
+    }
+    .model-details h3 {
+        font-size: 1.3rem;
+    }
 }
 
 /* Set default line height for font size presets. */
