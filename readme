@@ -12,26 +12,6 @@ A fully responsive, modern, and luxurious website for the car brand **Surovers**
 
 ## How to Use
 
-1. Open `index.html` (rename `home.html` to `index.html` for GitHub Pages) in your browser.
-2. All images are in `assets/images/`.
-3. Styles are in `style.css`.
-
-## Publishing on GitHub Pages
-
-1. Rename `home.htm# Surovers Cars Website
-
-A fully responsive, modern, and luxurious website for the car brand **Surovers**, a branch of Range Rover.
-
-## Features
-
-- Hero section with premium background, logo, and car images
-- Two main car models with detailed specifications and interactive tabs
-- Features, About, and Call-to-Action sections
-- Responsive design for desktop, tablet, and mobile
-- Luxurious styling with metallics, blacks, whites, and deep tones
-
-## How to Use
-
 1. Open `index.html` in your browser.
 2. All images are in `assets/images/`.
 3. Styles are in `style.css`.
@@ -49,13 +29,6 @@ A fully responsive, modern, and luxurious website for the car brand **Surovers**
 1. Push all files to your GitHub repository.
 2. Enable GitHub Pages in repository settings (set source to `/ (root)`).
 3. Visit your live site at the URL above.
-
----
-
-&copy; 2025 Surovers. A branch of Range Rover.l` to `index.html`.
-2. Push all files to your GitHub repository.
-3. Enable GitHub Pages in repository settings (set source to `/ (root)`).
-4. Visit `https://srihan-max.github.io/SUROVERS-Cars/` to view your site.
 
 ---
 
